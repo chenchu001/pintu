@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+        <meta content="email=no" name="format-detection" />
+        <title>武汉移动拼图</title>
+        <link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    </head>
+    <body ontouchmove="event.preventDefault()">
+        <div class="wrap">
+            <div class="ptBg">
+                <!--头部-->
+                <div class="pt-title clearfix">
+                    <!-- 左边的logo部分 -->
+                    <div class="pt_logo fl">
+                        <img src="static/images/logo.png" />
+                    </div>
+                    <!-- 右边的活动规则部分 -->
+                    <div class="pt_rule fr">
+                        <a href="javascript:void(0)" class="ruleBtn">
+                            <i class="rule_ico"></i>
+                            活动规则
+                        </a>
+                    </div>
+                </div>
+                <!--时间-->
+                <div class="pt_time">
+                    <p id="pt_time">00:00</p>
+                </div>
+                <!--下面的主体内容-->
+                <div class="pt_Main">
+                    <ul id="pt_list" class="clearfix">
+                    </ul>
+                </div>
+                <!--最底部的原图-->
+                <div class="bottom clearfix">
+                    <!-- 左边的原图 -->
+                    <div class="min_img fl">
+                        <img src="static/images/pt/pt_01/min.jpg" />
+                    </div>
+                    <div class="pt_text fl">
+                        <p>
+                            成功完成拼图关卡，<br/>即可参与抽奖哦！
+                        </p>
+                    </div>
+                </div>
+                 <!--覆盖背景-->
+                <div class="index-msk" id="bg-msk">
+                    <div class="msk-content">
+                        <!-- 关闭按钮 -->
+                        <a href="javascript:void(0)" class="rule_close fr"></a>
+                        <div class="clear"></div>
+                        <div class="mskTitle">
+                            <img src="static/images/rule_tit.png" />
+                        </div>
+                        <div class="ruleContent">
+                            <p>
+                                1、奖品设置<br/> 
+                                一等奖：小米电视3S 48英寸 价值1999元(1名)<br/>
+                                二等奖：50元话费(2000名)<br/>
+                                智慧奖：5元话费(30000名)<br/>
+                                幸运奖：1元话费(100000名)<br/>
+                            </p>
+                            <p>
+                                2、活动细则<br/>
+                                ● 活动时间：2016年6月6日至6月28日<br/>
+                                ● 每位用户默认有一次玩拼图机会，每成功完成宽带海报的拼图，即可获得一次抽奖机会，用户将游戏分享他人可另获一次拼图抽奖机会（每人每天无上限）<br/>        
+                                ● 每次抽奖所得奖品可累计，已获奖品将不会被清空。（参与活动用户需填写短信验证码，成功登陆后才可参与抽奖，非移动用户无法收取验证码）<br/>
+                    
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="static/js/zepto.min.js"></script>
+    <script type="text/javascript" src="static/js/zepto.touch.js"></script>
+    <script type="text/javascript" src="static/js/common.js"></script>
+    <script type="text/javascript">
+        function responsive(){
+            var width=document.getElementsByClassName('wrap')[0].clientWidth;
+            document.getElementsByTagName('html')[0].style.fontSize=(width/10)+"px";
+        };
+        responsive();
+        window.onresize=function(){
+            responsive();
+        };
+    </script>
+</html>

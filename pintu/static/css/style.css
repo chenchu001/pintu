@@ -1,0 +1,186 @@
+/* 
+* @Author: Marte
+* @Date:   2017-01-06 20:08:06
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-04-01 16:09:31
+*/
+html,body{
+    height:100%;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+/*首页css样式*/
+.wrap{
+    width:100%;
+    height:100%;
+}
+.indexBg{
+    background:url(../images/sye_bg.png) no-repeat bottom center #fec724;
+    width:100%;
+    height:100%;
+    background-size:95% auto;
+}
+.pt-title{
+    padding:0.25rem;
+}
+.pt_logo{
+    height:0.734375rem;
+    width:3.3125rem;
+}
+.pt_logo img{
+    width:100%;
+}
+.pt_rule a{
+    display:block;
+    width:1.625rem;
+    text-align:center;
+    font-size:0.375rem;
+    color:#8f480a;
+}
+.pt_rule a .rule_ico{
+    background:url(../images/rule.png) no-repeat center;
+    width:1.125rem;
+    height:1.125rem;
+    background-size:100%;
+    display:block;
+    margin:0 auto;
+    margin-bottom:0.1rem;
+}
+/*底部样式*/
+.pt-content{
+    position:absolute;
+    bottom:0.5rem;
+    width:100%;
+}
+.pt-content-text{
+    color:#e5006e;
+    font-size:0.28125rem;
+    text-align:center;
+}
+.pt_btn{
+    width:2.203125rem;
+    height:2.203125rem;
+    background-size:100%;
+    margin:0 auto;
+    display:block;
+    margin-top:0.2rem;
+}
+.pt_btn img{
+    width:100%;
+}
+/*背景遮罩*/
+.index-msk{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.9);
+    z-index:10;
+    left:0;
+    top:0;
+    display:none;
+}
+.msk-content{
+    padding:0 2.5%;
+}
+.rule_close{
+    background:url(../images/close.png) no-repeat center center;
+    background-size:100% 100%;
+    width:1.046875rem;
+    height:1.046875rem;
+    right:0.2rem;
+    top:0.9rem;
+    display:block;
+    position:absolute;
+}
+.mskTitle{
+    width:6.234375rem;
+    height:1.09375rem;
+    top:2.3rem;
+    position:absolute;
+    left:50%;
+    margin-left:-3.1171875rem;
+}
+.mskTitle img{
+    width:100%;
+}
+.ruleContent{
+    position:absolute;
+    top:4.5rem;
+    padding:0 2.5%;
+}
+.ruleContent p{
+    font-size:0.375rem;
+    color:#fff;
+    line-height:170%;
+    margin-bottom:0.5rem;
+}
+
+/*第二页拼图主体内容页*/
+.ptBg{
+    background:url(../images/pt_bg.png);
+    height:100%;
+    box-sizing:border-box;
+    position:relative;
+    width:100%;
+}
+.pt_time{
+    width:100%;
+}
+.pt_time p{
+    text-align:center;
+    font-size:0.6875rem;
+    color:#fff;
+}
+.pt_Main{
+    background:#fff;
+    margin:0 auto;
+    width:94%;
+    margin-top:0.2rem;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:0.125rem;
+}
+#pt_list{
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+#pt_list li{
+    float:left;
+    width:33.33%;
+    height:2.9375rem;
+}
+#pt_list li img{
+    width:100%;
+    height:100%;
+}
+.bottom{
+    width:98%;
+    margin-top:0.4rem;
+    background:url(../images/pt_bg2.png) no-repeat bottom left;
+    background-size:100% auto;
+    padding-bottom:1.33rem;
+}
+.min_img{
+    width:2.46875rem;
+    height:2.46875rem;
+    padding-left:0.28rem;
+}
+.min_img img{
+    width:100%;
+}
+.pt_text{
+    padding-left:1.3rem;
+}
+.pt_text p{
+    font-size:0.375rem;
+    color:#fff;
+}
